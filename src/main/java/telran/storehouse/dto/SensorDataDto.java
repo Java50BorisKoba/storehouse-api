@@ -1,5 +1,7 @@
 package telran.storehouse.dto;
 
-public record SensorDataDto(long id, double fullness, long timestamp) {
+import java.io.Serializable;
+
+public record SensorDataDto(long id, double fullness, long timestamp) implements Serializable {
 
 }

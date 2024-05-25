@@ -1,5 +1,7 @@
 package telran.storehouse.dto;
 
+import java.io.Serializable;
+
 public record OrderDataDto( 
 		long orderId,  
 		Coordinates coordinates,
@@ -9,6 +11,6 @@ public record OrderDataDto(
 		long openTime, 
 		long closeTime,
 		String creator, 
-		String status) {
+		String status) implements Serializable {
 
 }
